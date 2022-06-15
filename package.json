@@ -1,0 +1,35 @@
+{
+  "name": "todolist_with_blockchain",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xavi-99/TodoList_with_blockchain.git"
+  },
+  "keywords": [],
+  "author": "Xavier Navarro <xnavarroiguacel@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xavi-99/TodoList_with_blockchain/issues"
+  },
+  "homepage": "https://github.com/xavi-99/TodoList_with_blockchain#readme",
+  "dependencies": {
+    "fs": "*"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.6",
+    "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "chai": "^4.2.0",
+    "dotenv": "^16.0.1",
+    "ethereum-waffle": "^3.0.0",
+    "ethers": "^5.6.8",
+    "hardhat": "^2.9.7",
+    "process": "^0.11.10",
+    "url": "^0.11.0"
+
+  }
+}
