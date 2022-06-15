@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "start": "nuxt start"
   },
   "repository": {
     "type": "git",
@@ -18,7 +21,8 @@
   },
   "homepage": "https://github.com/xavi-99/TodoList_with_blockchain#readme",
   "dependencies": {
-    "fs": "*"
+    "fs": "*",
+    "nuxt": "^2.15.8"
   },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.6",
@@ -30,6 +34,5 @@
     "hardhat": "^2.9.7",
     "process": "^0.11.10",
     "url": "^0.11.0"
-
   }
 }

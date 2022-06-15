@@ -23,7 +23,7 @@ async function main() {
     abi: JSON.parse(todoList.interface.format("json")),
   };
 
-  fs.writeFileSync("./todoListConfig.json", JSON.stringify(data));
+  fs.writeFileSync("./assets/todoListConfig.json", JSON.stringify(data));
 }
 
 main()
