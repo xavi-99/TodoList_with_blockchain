@@ -31,3 +31,9 @@ typechain
 #Hardhat files
 cache
 artifacts
+
+# Nuxt dev/build outputs
+.output
+.nuxt
+# System files
+*.log
