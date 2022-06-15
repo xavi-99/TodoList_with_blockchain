@@ -8,6 +8,7 @@
 <script>
 import TodoListJSON from "../assets/todoListConfig.json";
 import { ethers } from "ethers";
+import { mapMutations } from 'vuex'
 export default {
   data() {
     return {
@@ -25,8 +26,11 @@ export default {
       this.signer
     );
     let tasks = await this.contract.getTaskList();
-    console.log(tasks);
+    this.$store.commit('setTasks', tasks);
   },
+   methods: {
+
+    },
 };
 </script>
 
