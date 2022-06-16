@@ -1,20 +1,28 @@
 <template>
   <div>
-    <h1>Hello Todolist</h1>
-    <p>This is a basic template caling get tasks from my smartcontract.</p>
+    <Task :task="taskInfo"></Task>
   </div>
 </template>
 
 <script>
 import TodoListJSON from "../assets/todoListConfig.json";
 import { ethers } from "ethers";
-import { mapMutations } from 'vuex'
+import Task from "../components/Task-Component.vue";
 export default {
+  components: {
+    Task
+  },
   data() {
     return {
       provider: null,
       signer: null,
       contract: null,
+      taskInfo: {
+        identifier: "1",
+        name: "adssadsa",
+        status: "0"
+      },
+
     };
   },
   async mounted() {
@@ -26,7 +34,7 @@ export default {
       this.signer
     );
     let tasks = await this.contract.getTaskList();
-    this.$store.commit('setTasks', tasks);
+    this.$store.commit('todolist/setTasks', tasks);
   },
    methods: {
 

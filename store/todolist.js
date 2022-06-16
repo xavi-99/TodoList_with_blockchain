@@ -7,7 +7,7 @@ state: () => ({
   tasks: []
 }),
 mutations: {
-  setTaks(state, tasks) {
+  setTasks(state, tasks) {
     state.tasks = tasks;
   },
   setContract(state, contract) {
